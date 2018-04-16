@@ -1,0 +1,21 @@
+<svg id="ss-title.svg" xmlns="http://www.w3.org/2000/svg" width="763" height="211" viewBox="0 0 763 211">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 34.086px;
+        fill: #fff;
+      }
+
+      .cls-1 {
+        font-family: "Crete Round";
+      }
+
+      .cls-2 {
+        font-family: Poppins;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+  <text id="scott" class="cls-1" transform="translate(-8.078 111.124)">Scott Smith</text>
+  <text id="Web_Designer" data-name="Web Designer" class="cls-2" transform="translate(0.015 195.405) ">Web Designer</text>
+</svg>

@@ -1,0 +1,62 @@
+.scroll-nav {
+	//display: none;
+	
+	position: fixed;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+	padding: 1em;
+	
+	display: flex;
+	align-items: center;
+	//background: blue;
+		
+	ul {
+		display: flex;
+		flex-direction: column;
+		height: 50%;
+		justify-content: space-between;
+	}
+	
+	a {
+		
+	}
+}
+
+.scroll-label {
+	display: flex;
+	align-items: center;
+	padding: .5em;
+	border-radius: 3px;
+	
+	&.scroll-on {
+		background: $color2;
+	}
+}
+
+
+.dot {
+	display: block;
+	background: $link-color;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	line-height: 1em;
+	
+	.scroll-on & {
+		background: white;
+	}
+}
+
+.label {
+	display: none;
+	color: white;
+	padding-left: .5em;
+	line-height: 1em;
+	font-size: em(16);
+
+	.scroll-on & {
+		display: block;
+	}
+}

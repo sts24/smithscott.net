@@ -1,0 +1,26 @@
+// colors
+
+$navy: #0e1f48;
+$red: #f93122;
+$orange: #FF5A00;
+$teal: #54eb65;
+
+$color1: $navy;
+$color2: $orange;
+$link-color: $orange;
+
+$gray: #7f7f7f;
+
+// fonts
+
+$primary-font: "Crete Round", serif;
+$secondary-font: 'Josefin Sans', sans-serif;
+$body-font: $secondary-font;
+
+
+
+// convert EMs
+
+@function em($size){
+	@return #{$size/16}em;
+}

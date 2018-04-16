@@ -1,0 +1,51 @@
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  width: auto;
+  height: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e900";
+}
+.icon-envelope-o:before {
+  content: "\e901";
+}
+.icon-tablet:before {
+  content: "\e902";
+}
+.icon-mobile:before {
+  content: "\e903";
+}
+.icon-mobile-phone:before {
+  content: "\e903";
+}
+.icon-desktop:before {
+  content: "\e904";
+}
+.icon-arrow-circle-up:before {
+  content: "\e905";
+}
+.icon-arrow-circle-down:before {
+  content: "\e906";
+}
+.icon-arrow-circle-left:before {
+  content: "\e907";
+}
+.icon-arrow-circle-right:before {
+  content: "\e908";
+}
+.icon-twitter:before {
+  content: "\e909";
+}
+.icon-facebook-official:before {
+  content: "\e90a";
+}
+

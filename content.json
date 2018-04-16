@@ -1,0 +1,47 @@
+{
+	"callutheran": {
+		"title": "Cal Lutheran",
+		"type": "web",
+		"desc": "We worked with an outside agency to design a entirely new website for the university in 2015. I helped to evolve the various design components as we implemented the new site with the OUCampus CMS across the campus. Due to the complexity of the site, the entire CSS framework was written using the SASS preprocessor.",
+		"link": "http://callutheran.edu"
+		},
+	
+	
+	"science": {
+		"title": "Science at Cal Lutheran",
+		"type": "web",
+		"desc": "This was a new site we spun up to help drive the campaign to build a new science facility on the Cal Lutheran campus. Borrowing many ideas from the main site, I built the HTML and CSS for the Science site.",
+		"link": "http://science.callutheran.edu"
+	},
+	
+	"plts": {
+		"title": "PLTS",
+		"type": "web",
+		"desc": "Pacific Lutheran Theological Seminary is the theological graduate school of Cal Lutheran.  PLTS maintains somewhat of it’s own identity, so this site was an opportunity to retune our templates specifically for their needs.",
+		"link": "http://plts.edu"
+	},
+	
+
+
+	"ksc": {
+		"title": "Kingsmen Shakepeare Company",
+		"type": "web",
+		"desc": "Website designed and developed for Cal Lutheran's professional Shakespeare theatre company."
+		
+	},
+	
+	"trailcoffee": {
+		"title": "Trail Coffee",
+		"type": "web",
+		"desc": "A side project I launched in 2015 to give me a space to share my hiking photography and try out different design ideas.",
+		"link": "http://trailcoffee.net"
+	},
+	
+	"see-america": {
+		"title": "See America",
+		"type": "art",
+		"desc": "In 2014, I contributed to the Creative Action Network's See America Project. This was a collection of artwork celebrating public lands and the outdoors. In 2016, this poster was included in the <a href=\"https://creativeaction.network/pages/see-america-the-book\">See America book</a>.",
+		"link": "https://creativeaction.network/products/channel-islands-national-park-by-scott-smith"
+	}
+	
+}

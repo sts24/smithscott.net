@@ -1,0 +1,47 @@
+
+a {
+	color: $link-color;
+	text-decoration: none;
+	
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+
+h1 {
+	font-family: $primary-font;
+	font-size: em(48);
+	line-height: 1em;
+	margin: 0 0 0.25em 0;
+}
+
+
+h2 {
+	font-family: $secondary-font;
+	font-size: em(21);
+	font-weight: bold;
+	line-height: 1em;
+	margin: 0 0 1rem 0;
+}
+
+h3 {
+	font-family: $primary-font;
+	font-size: em(36);
+	font-weight: bold;
+	line-height: 1em;
+	margin-bottom: 0.5em;
+}
+
+
+
+p {
+	margin-bottom: 1em;
+	font-size: em(21);
+	line-height: 1.4em;
+	
+	@media (max-width: 767px){
+		font-size: em(18);
+		line-height: 1.4em;
+	}
+}
