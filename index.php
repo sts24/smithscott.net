@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Scott Smith - Design Portfolio</title>
+	<title>Scott Smith - Front End Web Designer in Ventura County</title>
 
 	<link rel="icon" type="image/png" href="/images/favicon.png">
 	<link rel="apple-touch-icon" href="/images/site-icon.png">
