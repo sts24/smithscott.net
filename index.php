@@ -43,7 +43,7 @@
 
 			<header>
 				<h1>Scott Smith</h1>
-				<h2>Web Designer</h2>
+				<h2>Front-End Web Designer</h2>
 			</header>
 
 
