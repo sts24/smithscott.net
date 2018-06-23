@@ -1,0 +1,156 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+	color: #444;
+	
+	@media (min-width: 768px){
+		padding: 3rem;
+		font-size: 16px;
+	}
+}
+
+#app {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-areas: 
+		'header header'
+		'race standings';
+	grid-gap: 3rem;
+}
+
+.header {
+	grid-area: header;
+	justify-self: center;
+	text-align: center;
+	
+	h1 {
+		text-align: center;
+		margin: 0 0 1rem 0;
+		padding: 0;
+		font-size: 2.75rem
+	}
+}
+
+.data-selection {
+	grid-area: nav;
+	
+	label {
+		display: block;
+		font-weight: bold;
+		font-size: 1.25rem;
+		line-height: 1.5em;
+	}
+}
+
+
+
+.season-select {
+	width: 100px;
+	margin: 0;
+	appearance: none
+}
+
+
+
+
+.races {
+	grid-area: race;
+}
+
+
+.race-table {
+	margin-bottom: 3rem;
+
+	header {
+		margin-bottom: 0.5rem;
+
+		h2 {
+			margin: 0;
+			padding: 0;
+			font-size: 2rem;
+		}
+
+		h3 {
+			margin: 0 0 0.5rem 0;
+			padding: 0;
+			font-size: 1.25rem;
+			font-weight: normal;
+		}
+
+		small {
+			display: block;
+			font-size: 0.875rem;
+			line-height: 1.25em;
+		}
+	}
+	
+	footer {
+		text-align: center;
+	}
+}
+
+.chart {
+	width: 100%;
+	border-spacing: 0;
+	
+	border: 1px solid darkred;
+	
+	thead {
+		background: darkred;
+		color: white;
+		
+		th {
+			text-align: left;
+			padding: 0.5rem;
+			white-space: nowrap;
+		}
+	}
+	
+	tbody {
+		
+		tr:nth-child(n+6){
+			display: none;
+		}
+
+		tr:nth-child(even){
+			background: lightgray;
+		}
+		
+		td {
+			padding: 0.5rem;
+			white-space: nowrap;
+		}
+	}
+	
+	&.show-all tbody tr { display: table-row; }
+	
+	@media (min-width: 768px){
+		
+		caption {
+			padding: 0 0 0.5rem 0;
+		}
+	}
+}
+
+.standings {
+	grid-area: standings;
+}
+
+.show-all-btn {
+	display: inline-block;
+	margin: 0 auto 0 auto;
+	background: darkred;
+	color: white;
+	padding: 0.5rem;
+	font-size: 0.875rem;
+	font-weight: bold;
+	line-height: 1rem;
+	border-radius: 0 0 5px 5px;
+	cursor: pointer;
+		
+	&:hover {
+		color: gold;
+	}
+}

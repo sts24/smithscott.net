@@ -1,0 +1,105 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  color: #444; }
+  @media (min-width: 768px) {
+    body {
+      padding: 3rem;
+      font-size: 16px; } }
+
+#app {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: 'header header' 'race standings';
+  grid-gap: 3rem; }
+
+.header {
+  grid-area: header;
+  justify-self: center;
+  text-align: center; }
+  .header h1 {
+    text-align: center;
+    margin: 0 0 1rem 0;
+    padding: 0;
+    font-size: 2.75rem; }
+
+.data-selection {
+  grid-area: nav; }
+  .data-selection label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.5em; }
+
+.season-select {
+  width: 100px;
+  margin: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+
+.races {
+  grid-area: race; }
+
+.race-table {
+  margin-bottom: 3rem; }
+  .race-table header {
+    margin-bottom: 0.5rem; }
+    .race-table header h2 {
+      margin: 0;
+      padding: 0;
+      font-size: 2rem; }
+    .race-table header h3 {
+      margin: 0 0 0.5rem 0;
+      padding: 0;
+      font-size: 1.25rem;
+      font-weight: normal; }
+    .race-table header small {
+      display: block;
+      font-size: 0.875rem;
+      line-height: 1.25em; }
+  .race-table footer {
+    text-align: center; }
+
+.chart {
+  width: 100%;
+  border-spacing: 0;
+  border: 1px solid darkred; }
+  .chart thead {
+    background: darkred;
+    color: white; }
+    .chart thead th {
+      text-align: left;
+      padding: 0.5rem;
+      white-space: nowrap; }
+  .chart tbody tr:nth-child(n+6) {
+    display: none; }
+  .chart tbody tr:nth-child(even) {
+    background: lightgray; }
+  .chart tbody td {
+    padding: 0.5rem;
+    white-space: nowrap; }
+  .chart.show-all tbody tr {
+    display: table-row; }
+  @media (min-width: 768px) {
+    .chart caption {
+      padding: 0 0 0.5rem 0; } }
+
+.standings {
+  grid-area: standings; }
+
+.show-all-btn {
+  display: inline-block;
+  margin: 0 auto 0 auto;
+  background: darkred;
+  color: white;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1rem;
+  border-radius: 0 0 5px 5px;
+  cursor: pointer; }
+  .show-all-btn:hover {
+    color: gold; }
