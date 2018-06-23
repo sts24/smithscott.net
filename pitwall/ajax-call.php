@@ -1,11 +1,15 @@
 <?
 // settings
-$url 			= "https://example.com/queryforjson"; // json source
-$cache 			= __DIR__."/json.cache"; // make this file in same dir
-$force_refresh	 	= false; // dev
-$refresh		= 60*60; // once an hour
+$api_endpoint = urldecode($_GET['api_call']);
+
+$url = 'https://ergast.com/api/f1/'.$api_endpoint;
+$cache = __DIR__.'cache/'.$api_endpoint;
+$force_refresh = false;
+$refresh = 60*60;
+
 // cache json results so to not over-query (api restrictions)
 if ($force_refresh || ((time() - filectime($cache)) > ($refresh) || 0 == filesize($cache))) {
+	echo 'from source ';
 	// read json source
 	$ch = curl_init($url) or die("curl issue");
 	$curl_options = array(
@@ -29,6 +33,7 @@ if ($force_refresh || ((time() - filectime($cache)) > ($refresh) || 0 == filesiz
 	fwrite($handle, $json_cache);
 	fclose($handle);
 } else {
+	echo 'from cache ';
 	$json_cache = file_get_contents($cache); //locally
 }
 $jsonobject = new SimpleXMLElement($json_cache);
