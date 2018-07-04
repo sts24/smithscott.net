@@ -4,6 +4,8 @@
 	background-position: center center;
 	background-size: cover;
 	min-height: 100vh;
+	
+	flex-direction: column;
 
 	@media (max-width: 767px){
 		background-image: url('../images/anacapa-small.jpg');
@@ -15,7 +17,7 @@
 	border-top: .5em solid $color2;
 	border-bottom: .5em solid $color2;
 	background-color: lighten($color1,10%);
-	background-image: url('/images/waves.svg');
+	background-image: url('../images/waves.svg');
 	background-size: 100px auto;
 	
 	color: white;
@@ -75,4 +77,17 @@
 			}
 		}
 	}
+}
+
+
+.header-credit {
+	font-weight: bold;
+	font-size: em(11);
+	text-transform: uppercase;
+	letter-spacing: em(1);
+	line-height: 1.25em;
+	color: rgba(white,0.75);
+	text-shadow: 0 0 5px black, 0 0 15px black;
+	align-self: flex-end;
+	text-align: right;
 }
