@@ -4,8 +4,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Scott Smith - Front End Web Designer in Ventura County</title>
 
-	<link rel="icon" type="image/png" href="/images/favicon.png">
-	<link rel="apple-touch-icon" href="/images/site-icon.png">
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<link rel="apple-touch-icon" href="images/site-icon.png">
 	<meta name="apple-mobile-web-app-title" content="Scott">
 
 
@@ -27,7 +27,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Crete+Round:400,400i|Josefin+Sans:400,700" rel="stylesheet">
 
 
-	<link rel="stylesheet" type="text/css" href="/css/ss_styles.css" />
+	<link rel="stylesheet" type="text/css" href="css/ss_styles.css" />
 
 </head>
 <body>
@@ -39,7 +39,7 @@
 
 		<div class="welcome-content">
 
-			<img src="/images/bear-white.svg" class="masthead-mark" alt="California Bear" />
+			<img src="images/bear-white.svg" class="masthead-mark" alt="California Bear" />
 
 			<header>
 				<h1>Scott Smith</h1>
@@ -77,7 +77,7 @@
 
 	function preload_img($path){
 
-		$path = $_SERVER['DOCUMENT_ROOT'].$path;
+		$path = $_SERVER['DOCUMENT_ROOT'].'/smithscott.net/'.$path;
 		$type = pathinfo($path, PATHINFO_EXTENSION);
 		$data = file_get_contents($path);
 		$base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
@@ -90,16 +90,16 @@
 		if($i['type'] == 'web'){
 
 
-			$desktop_img = '/images/portfolio-items/desktop/'.$key.'.jpg 1x, /images/portfolio-items/desktop/'.$key.'@2x.jpg 2x';
-			$mobile_img = '/images/portfolio-items/mobile/'.$key.'.jpg 1x, /images/portfolio-items/mobile/'.$key.'@2x.jpg 2x';
+			$desktop_img = 'images/portfolio-items/desktop/'.$key.'.jpg 1x, images/portfolio-items/desktop/'.$key.'@2x.jpg 2x';
+			$mobile_img = 'images/portfolio-items/mobile/'.$key.'.jpg 1x, images/portfolio-items/mobile/'.$key.'@2x.jpg 2x';
 
-			$preload_desktop = '/images/portfolio-items/preload/'.$key.'-desktop.jpg';
-			$preload_mobile = '/images/portfolio-items/preload/'.$key.'-mobile.jpg';
+			$preload_desktop = 'images/portfolio-items/preload/'.$key.'-desktop.jpg';
+			$preload_mobile = 'images/portfolio-items/preload/'.$key.'-mobile.jpg';
 
 		}
 
 		if($i['type'] == 'art'){
-			$img = '/images/portfolio-items/art/'.$key.'.jpg 1x, /images/portfolio-items/art/'.$key.'@2x.jpg 2x';
+			$img = 'images/portfolio-items/art/'.$key.'.jpg 1x, images/portfolio-items/art/'.$key.'@2x.jpg 2x';
 		}
 
 
@@ -165,7 +165,7 @@
 
 
 
-	<script type="text/javascript" src="/js/ss-11.js"></script>
+	<script type="text/javascript" src="js/ss-11.js"></script>
 
 
 
