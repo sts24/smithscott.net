@@ -77,7 +77,7 @@
 
 	function preload_img($path){
 
-		$path = $_SERVER['DOCUMENT_ROOT'].'/smithscott.net/'.$path;
+		$path = $_SERVER['DOCUMENT_ROOT'].'/'.$path;
 		$type = pathinfo($path, PATHINFO_EXTENSION);
 		$data = file_get_contents($path);
 		$base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
