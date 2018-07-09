@@ -2,3 +2,4 @@
 config.codekit3
 .codekit-cache
 .DS_Store
+.ftpconfig
