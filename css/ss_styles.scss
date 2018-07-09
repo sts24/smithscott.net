@@ -8,7 +8,7 @@ body {
 	font-family: $body-font;
 	font-size: 18px;
 	line-height: 1.5em;
-	
+
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -16,8 +16,8 @@ body {
 @import 'sass/_type';
 
 @import 'sass/_header';
-	
-	
+
+
 
 
 .big-section {
@@ -26,13 +26,13 @@ body {
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: center;
-	
+
 	@media (min-width: 1024px){
 		min-height: 80vh;
 	}
-	
-	
-	
+
+
+
 	&#about {
 		min-height: 50vh;
 		background-color: lighten($color1,10%);
@@ -40,12 +40,12 @@ body {
 		background-size: 100px auto;
 		padding: 4em 2em;
 	}
-	
+
 	&#footer {
 		min-height: 0;
 		background-color: $color2;
 	}
-	
+
 	@media (max-width: 767px){
 		flex-direction: column;
 		padding: 2em 1em;
@@ -60,15 +60,15 @@ body {
 	width: 100%;
 	height: 10vh;
 	min-height: 3em;
-	max-height: 150px;
+	max-height: 100px;
 	background-color: lighten($color1,10%);
 	background-image: url('../images/waves.svg');
 	background-repeat: repeat-x;
 	background-size: 100px auto;
-	
+
 	margin: 0;
 	padding: 0;
-	
+
 	border: 0 none;
 	display: block;
 }
@@ -95,11 +95,10 @@ body {
 
 .showcase-area {
 	text-align: center;
-	
-	@media (min-width: 768px){
+
+	@media (min-width: 1024px){
 		flex: 0 1 90%;
 		display: flex;
-		//max-width: 90%;
 		align-items: center;
 		justify-content: center;
 	}
@@ -117,17 +116,14 @@ body {
 	background-size: 30px auto;
 	border-radius: 5px 5px 0 0;
 	padding: 1em 0 0 0;
-	
+
 	>img {
 		width: 100%;
 		height: auto;
-		max-width: 1000px;
 		display: block;
-		
-		
-	}	
+	}
 
-	@media (min-width: 768px){
+	@media (min-width: 1024px){
 		flex: 0 1 auto;
 		width: 100%;
 		max-width: 1200px;
@@ -150,30 +146,17 @@ body {
 	background-image: url('../images/circle.svg');
 	background-size: em(15);
 	background-repeat: no-repeat;
-	
-/*
-	.img-holder {
-		
-		
-		&::after {
-			content: '';
-			display: block;
-			width: 100%;
-			padding-top: 56.25%;
-		}
-	}
-*/
-	
+
 	>img {
 		max-width: 300px;
 		height: auto;
 		display: block;
 		width: 100%;
 	}
-	
-	
-	
-	@media (min-width: 768px){
+
+
+
+	@media (min-width: 1024px){
 		flex: 0 1 auto;
 		width: 100%;
 		max-width: 300px;
@@ -190,11 +173,11 @@ body {
 		width: 100%;
 		height: auto;
 	}
-	
+
 	@media (min-width: 768px){
 		flex: 0 1 40%;
 		display: inline-block;
-		
+
 		>img {
 			//max-width: 600px;
 		}
@@ -215,26 +198,26 @@ body {
 	padding: 0.25em 1em;
 	line-height: 1em;
 	border-radius: 3px;
-	
+
 	&:hover {
 		text-decoration: none;
 		color: white;
 	}
-	
+
 	&.dark {
 		background: $color1;
 		color: white;
-		
+
 		&:hover {
 			color: $color2;
 		}
 	}
-	
+
 	&.light {
 		background: $color2;
 		color: $color1;
 	}
-	
+
 	#footer & {
 		//color: white;
 	}
@@ -250,4 +233,3 @@ body {
 
 // scroll nav
 @import 'sass/_scroll-nav';
-
