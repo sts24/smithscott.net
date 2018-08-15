@@ -49,12 +49,39 @@
 
 			<p>Scott is a web designer born and raised in Southern California. With a specialty in front-end development, he has extensive experience with working in higher education. He also publishes Trail Coffee, a journal of hiking photography.</p>
 
-
 			<ul class="site-nav">
-				<li><a href="mailto:hello@smithscott.net">Contact</a></li>
-				<li><a href="http://dribbble.com/scottsmith">Dribbble</a></li>
-				<li><a href="https://codepen.io/sts24/">CodePen</a></li>
-				<li><a href="http://trailcoffee.net">Trail Coffee</a></li>
+				<li>
+					<a href="mailto:hello@smithscott.net" class="icon-link">
+						<span class="icon">
+							<?php include('./images/icons/paper-plane.svg'); ?>
+						</span>
+						<span class="icon-label">Contact</span>
+					</a>
+				</li>
+				<li>
+					<a href="http://dribbble.com/scottsmith" class="icon-link">
+						<span class="icon">
+							<?php include('./images/icons/dribbble.svg'); ?>
+						</span>
+						<span class="icon-label">Dribbble</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://codepen.io/sts24/" class="icon-link">
+						<span class="icon">
+							<?php include('./images/icons/codepen.svg'); ?>
+						</span>
+						<span class="icon-label">CodePen</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/sts24" class="icon-link">
+						<span class="icon">
+							<?php include('./images/icons/github.svg'); ?>
+						</span>
+						<span class="icon-label">GitHub</span>
+					</a>
+				</li>
 			</ul>
 
 			<a href="#portfolio" class="button">View Portfolio</a>
