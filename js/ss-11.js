@@ -5,6 +5,31 @@ var p_items = [];
 var p_elems = $d.querySelectorAll('.portfolio-item');
 
 
+var anchor_links = {
+	init: function(){
+		
+		$d.querySelectorAll('a[href^="#"]').forEach(function(links){
+			links.addEventListener('click', function(e){
+				if(e.target.hash !== ''){
+					e.preventDefault();
+					
+					$d.querySelector(this.getAttribute('href')).scrollIntoView({
+			            behavior: 'smooth'
+			        });
+				}
+			});
+			
+		});
+	}
+}
+
+anchor_links.init();
+
+
+
+
+
+
 var scroll_nav = {
 	on: function(e){
 		console.log(e);
