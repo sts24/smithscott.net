@@ -94,11 +94,12 @@ p {
       line-height: 1.4em; } }
 
 #welcome {
-  background-image: url("../images/anacapa-large.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   min-height: 100vh;
+  overflow: hidden;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -106,6 +107,30 @@ p {
   @media (max-width: 767px) {
     #welcome {
       background-image: url("../images/anacapa-small.jpg"); } }
+  @media (min-width: 768px) {
+    #welcome {
+      width: 100vw;
+      height: 100vh;
+      background: darkblue;
+      position: relative;
+      overflow: hidden; } }
+
+.video-bg {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+  @media (max-aspect-ratio: 16 / 9) {
+    .video-bg {
+      width: auto;
+      height: 100%; } }
+  @media (min-aspect-ratio: 16 / 9) {
+    .video-bg {
+      width: 100%;
+      height: auto; } }
+  @media (max-width: 767px) {
+    .video-bg {
+      display: none; } }
 
 .welcome-banner {
   border-top: 0.5em solid #FF5A00;
@@ -114,6 +139,8 @@ p {
   background-image: url("../images/waves.svg");
   background-size: 100px auto;
   color: white;
+  position: relative;
+  z-index: 100;
   padding: 0;
   text-align: center; }
 

@@ -105,6 +105,8 @@
 		</div>
 
 	</div>
+	
+	<video data-src="media/haleakala.mp4" muted autoplay loop playsinline poster="media/haleakala-poster.jpg" class="video-bg" />
 
 </section>
 

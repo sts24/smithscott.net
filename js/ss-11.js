@@ -60,11 +60,23 @@ function isInViewport(element) {
 }
 
 
+var loadVideo = function(){
+	var video_bg = $d.querySelector('.video-bg');
 
+	if(window.innerWidth >= 1024 && video_bg.src == ''){
+		video_bg.src = video_bg.dataset.src;
+		console.log('loaded');	
+	}
+}
 
-
+window.onresize = function(e){
+	loadVideo();
+}
 
 window.onload = function(e){
+
+	
+	loadVideo();
 
 	// generate list of portfolio items
 	for(i = 0; i < p_elems.length; ++i) {
