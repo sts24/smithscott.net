@@ -27,7 +27,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Crete+Round:400,400i|Josefin+Sans:400,700" rel="stylesheet">
 
 
-	<link rel="stylesheet" type="text/css" href="css/ss_styles.css" />
+	<link rel="stylesheet" type="text/css" href="css/ss_styles.css?v=1" />
 	
 	<!-- Matomo -->
 <script type="text/javascript">
@@ -210,7 +210,7 @@
 
 
 
-	<script type="text/javascript" src="js/ss-11.js"></script>
+	<script type="text/javascript" src="js/ss-11.js?v=1"></script>
 
 
 
