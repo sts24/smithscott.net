@@ -2,7 +2,7 @@
 	"callutheran": {
 		"title": "Cal Lutheran",
 		"type": "web",
-		"desc": "We worked with an outside agency to design a entirely new website for the university in 2015. I helped to evolve the various design components as we implemented the new site with the OUCampus CMS across the campus. Due to the complexity of the site, the entire CSS framework was written using the SASS preprocessor.",
+		"desc": "Our department worked with an outside agency to design a entirely new website for the university in 2015. I helped to evolve the various design components as we implemented the new site with the OUCampus CMS across the campus. Due to the complexity of the site, the entire CSS framework was written using the SASS preprocessor.",
 		"link": "http://callutheran.edu"
 		},
 	

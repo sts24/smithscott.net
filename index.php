@@ -63,7 +63,7 @@
 			</header>
 
 
-			<p>Scott is a web designer born and raised in Southern California. With a specialty in front-end development, he has extensive experience with working in higher education. He also publishes Trail Coffee, a journal of hiking photography.</p>
+			<p>I am a web designer born and raised in Southern California. With a specialty in front-end development, I have extensive experience with working in higher education. I also publishes Trail Coffee, a journal of hiking photography.</p>
 
 			<ul class="site-nav">
 				<li>
