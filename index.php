@@ -196,7 +196,6 @@
 </footer>
 
 
-<!--
 <nav class="scroll-nav">
 	<ul>
 	<?php
@@ -206,7 +205,6 @@
 	?>
 	</ul>
 </nav>
--->
 
 
 

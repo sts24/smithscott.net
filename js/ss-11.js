@@ -56,6 +56,7 @@ function isInViewport(element) {
 	const vertInView = (rect.top <= windowHeight) && ((rect.top + rect.height) >= 0);
 	const horInView = (rect.left <= windowWidth) && ((rect.left + rect.width) >= 0);
 
+console.log(element,rect.height);
 	return (vertInView && horInView);
 }
 
@@ -101,7 +102,7 @@ window.onscroll = function(e){
 		//scroll_nav.off(p_items[pi]);
 
 		if(isInViewport($d.querySelector('#'+p_items[pi].id))){
-			//scroll_nav.on(p_items[pi]);
+			scroll_nav.on(p_items[pi]);
 
 			// setup lazy load images
 			if(p_items[pi].loaded == false){
