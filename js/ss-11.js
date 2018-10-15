@@ -7,18 +7,18 @@ var p_elems = $d.querySelectorAll('.portfolio-item');
 
 var anchor_links = {
 	init: function(){
-		
+
 		$d.querySelectorAll('a[href^="#"]').forEach(function(links){
 			links.addEventListener('click', function(e){
 				if(e.target.hash !== ''){
 					e.preventDefault();
-					
+
 					$d.querySelector(this.getAttribute('href')).scrollIntoView({
 			            behavior: 'smooth'
 			        });
 				}
 			});
-			
+
 		});
 	}
 }
@@ -55,7 +55,6 @@ function isInViewport(element) {
 	const vertInView = (rect.top <= windowHeight) && ((rect.top + rect.height) >= 0);
 	const horInView = (rect.left <= windowWidth) && ((rect.left + rect.width) >= 0);
 
-console.log(element,rect.height);
 	return (vertInView && horInView);
 }
 
@@ -65,7 +64,6 @@ var loadVideo = function(){
 
 	if(window.innerWidth >= 1024 && video_bg.src == ''){
 		video_bg.src = video_bg.dataset.src;
-		console.log('loaded');	
 	}
 }
 
@@ -75,7 +73,7 @@ window.onresize = function(e){
 
 window.onload = function(e){
 
-	
+
 	loadVideo();
 
 	// generate list of portfolio items
@@ -84,8 +82,6 @@ window.onload = function(e){
 			'id': p_elems[i].id,
 			'loaded': false
 		});
-
-		console.log(isInViewport($d.querySelector('#'+p_elems[i].id)));
 	}
 
 }
@@ -113,3 +109,30 @@ window.onscroll = function(e){
 	}
 
 }
+
+
+
+
+// new style scrolling addEventListener
+
+let mainNavLinks = document.querySelectorAll(".scroll-nav a");
+let mainSections = document.querySelectorAll(".portfolio-item");
+
+let lastId;
+let cur = [];
+let section;
+
+window.addEventListener("scroll", event => {
+	let fromTop = window.scrollY;
+
+	mainNavLinks.forEach(link => {
+	    let section = document.querySelector(link.hash);
+		let page_top_trigger = (fromTop + window.innerHeight / 3);
+
+	    if(section.offsetTop <= page_top_trigger && section.offsetTop + section.offsetHeight > page_top_trigger) {
+	    	link.classList.add("scroll-on");
+	    } else {
+	    	link.classList.remove("scroll-on");
+	    }
+	});
+});
