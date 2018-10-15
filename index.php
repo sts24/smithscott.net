@@ -28,7 +28,7 @@
 
 
 	<link rel="stylesheet" type="text/css" href="css/ss_styles.css?v=1" />
-	
+
 	<!-- Matomo -->
 <script type="text/javascript">
   var _paq = _paq || [];
@@ -105,16 +105,15 @@
 		</div>
 
 	</div>
-	
+
 	<video data-src="media/haleakala.mp4" muted autoplay loop playsinline poster="media/haleakala-poster.jpg" class="video-bg" />
 
 </section>
 
 
 
+<main id="portfolio">
 
-
-<hr class="section-break " id="portfolio" />
 
 <?php
 
@@ -185,9 +184,10 @@
 
 		</section>
 
-		<hr class="section-break" />
+
 	<?php } ?>
 
+</main>
 
 <footer class="big-section" id="footer">
 
@@ -207,7 +207,7 @@
 </nav>
 
 
-	<script type="text/javascript" src="js/ss-11.js?v=1"></script>
+<script type="text/javascript" src="js/ss-11.js?v=1"></script>
 
 
 
