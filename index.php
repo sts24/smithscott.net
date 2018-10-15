@@ -195,7 +195,7 @@
 
 </footer>
 
-<?php /*
+
 <nav class="scroll-nav">
 	<ul>
 	<?php
@@ -206,7 +206,6 @@
 	</ul>
 </nav>
 
-*/ ?>
 
 	<script type="text/javascript" src="js/ss-11.js?v=1"></script>
 

@@ -55,7 +55,7 @@ function isInViewport(element) {
 	const vertInView = (rect.top <= windowHeight) && ((rect.top + rect.height) >= 0);
 	const horInView = (rect.left <= windowWidth) && ((rect.left + rect.width) >= 0);
 
-//console.log(element,rect.height);
+console.log(element,rect.height);
 	return (vertInView && horInView);
 }
 
@@ -65,7 +65,7 @@ var loadVideo = function(){
 
 	if(window.innerWidth >= 1024 && video_bg.src == ''){
 		video_bg.src = video_bg.dataset.src;
-		//console.log('loaded');	
+		console.log('loaded');	
 	}
 }
 
@@ -85,7 +85,7 @@ window.onload = function(e){
 			'loaded': false
 		});
 
-		//console.log(isInViewport($d.querySelector('#'+p_elems[i].id)));
+		console.log(isInViewport($d.querySelector('#'+p_elems[i].id)));
 	}
 
 }
