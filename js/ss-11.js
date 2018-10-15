@@ -32,8 +32,7 @@ anchor_links.init();
 
 var scroll_nav = {
 	on: function(e){
-		console.log(e);
-		$d.querySelector('.scroll-nav [href="#'+e.id+'"]').classList.add('scroll-on');
+    		$d.querySelector('.scroll-nav [href="#'+e.id+'"]').classList.add('scroll-on');
 	},
 	off: function(e){
 		$d.querySelector('.scroll-nav [href="#'+e.id+'"]').classList.remove('scroll-on');
@@ -56,7 +55,7 @@ function isInViewport(element) {
 	const vertInView = (rect.top <= windowHeight) && ((rect.top + rect.height) >= 0);
 	const horInView = (rect.left <= windowWidth) && ((rect.left + rect.width) >= 0);
 
-console.log(element,rect.height);
+//console.log(element,rect.height);
 	return (vertInView && horInView);
 }
 
@@ -66,7 +65,7 @@ var loadVideo = function(){
 
 	if(window.innerWidth >= 1024 && video_bg.src == ''){
 		video_bg.src = video_bg.dataset.src;
-		console.log('loaded');	
+		//console.log('loaded');	
 	}
 }
 
@@ -102,7 +101,7 @@ window.onscroll = function(e){
 		//scroll_nav.off(p_items[pi]);
 
 		if(isInViewport($d.querySelector('#'+p_items[pi].id))){
-			scroll_nav.on(p_items[pi]);
+			//scroll_nav.on(p_items[pi]);
 
 			// setup lazy load images
 			if(p_items[pi].loaded == false){
