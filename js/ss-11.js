@@ -29,8 +29,9 @@ var loadVideo = function(){
 
 // new style scrolling addEventListener
 
-var mainNavLinks = document.querySelectorAll(".scroll-nav a");
+var mainNavLinks = document.querySelectorAll(".scroll-nav-item");
 var mainSections = document.querySelectorAll(".portfolio-item");
+var portfolioSections = document.querySelector('#portfolio');
 
 var lastId;
 var cur = [];
@@ -39,16 +40,26 @@ var section;
 var scrollCheck = function(event){
 	var fromTop = window.scrollY;
 
-	mainNavLinks.forEach(link => {
+	mainNavLinks.forEach(function(link,i){
 	    var section = document.querySelector(link.hash);
 		var page_top_trigger = (fromTop + window.innerHeight / 3);
 
+		// highlight scroll nav dot based on current section in viewport
 	    if(section.offsetTop <= page_top_trigger && section.offsetTop + section.offsetHeight > page_top_trigger) {
-	    	link.classList.add("scroll-on");
+	    	link.classList.add("scroll-nav-item-on");
 			lazyLoadImg(document.querySelectorAll(link.hash + ' img'));
 	    } else {
-	    	link.classList.remove("scroll-on");
+	    	link.classList.remove("scroll-nav-item-on");
 	    }
+
+		// reveal scroll nav dots if scrolling below welcome section
+		if(portfolioSections.offsetTop <= page_top_trigger){
+			document.querySelector('.scroll-nav').classList.add('scroll-nav-active');
+		} else {
+			document.querySelector('.scroll-nav').classList.remove('scroll-nav-active');
+		}
+
+
 	});
 }
 

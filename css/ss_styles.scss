@@ -30,7 +30,7 @@ body {
 		min-height: 80vh;
 	}
 
-	&::after {
+	&::before {
 		content: '';
 		display: block;
 		width: 100%;
@@ -62,7 +62,7 @@ body {
 		background-color: $color2;
 		padding: 2em 0;
 
-		&::after {
+		&::before {
 			display: none;
 		}
 	}
@@ -179,10 +179,6 @@ body {
 	@media (min-width: 768px){
 		flex: 0 1 40%;
 		display: inline-block;
-
-		>img {
-			//max-width: 600px;
-		}
 	}
 }
 
@@ -220,9 +216,6 @@ body {
 		color: $color1;
 	}
 
-	#footer & {
-		//color: white;
-	}
 }
 
 .horizontal-list {

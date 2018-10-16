@@ -1,62 +1,78 @@
+$scroll-transition: 250ms linear;
+
 .scroll-nav {
-	//display: none;
-	
+	visibility: hidden;
+	opacity: 0;
+	transition: $scroll-transition opacity;
+
 	position: fixed;
 	height: 100vh;
 	top: 0;
 	left: 0;
 	z-index: 10000;
 	padding: 1em;
-	
+
 	display: flex;
 	align-items: center;
-	//background: blue;
-		
+
 	ul {
 		display: flex;
 		flex-direction: column;
 		height: 50%;
 		justify-content: space-between;
 	}
-	
-	a {
-		
+
+	&.scroll-nav-active {
+		visibility: visible;
+		opacity: 1;
 	}
 }
 
-.scroll-label {
+.scroll-nav-item {
 	display: flex;
 	align-items: center;
 	padding: .5em;
 	border-radius: 3px;
-	
-	&.scroll-on {
-		background: $color2;
+	transition: $scroll-transition background-color;
+
+	&:hover {
+		background-color: $color2;
 	}
 }
 
 
 .dot {
 	display: block;
-	background: $link-color;
+	background-color: $link-color;
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
 	line-height: 1em;
-	
-	.scroll-on & {
-		background: white;
+	transition: $scroll-transition transform;
+
+	.scroll-nav-item-on & {
+		background-color: white;
+		transform: scale(2);
+	}
+
+	.scroll-nav-item:hover & {
+		transform: scale(1);
+		background-color: white;
 	}
 }
 
 .label {
-	display: none;
+	visibility: hidden;
+	opacity: 0;
+	transition: $scroll-transition opacity;
+
 	color: white;
 	padding-left: .5em;
 	line-height: 1em;
 	font-size: em(16);
 
-	.scroll-on & {
-		display: block;
+	.scroll-nav-item:hover & {
+		visibility: visible;
+		opacity: 1;
 	}
 }
