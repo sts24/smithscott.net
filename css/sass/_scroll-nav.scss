@@ -29,11 +29,12 @@ $scroll-transition: 250ms linear;
 }
 
 .scroll-nav-item {
-	display: flex;
-	align-items: center;
+	display: block;
 	padding: .5em;
 	border-radius: 3px;
 	transition: $scroll-transition background-color;
+	box-sizing: border-box;
+	cursor: pointer;
 
 	&:hover {
 		background-color: $color2;
@@ -42,10 +43,10 @@ $scroll-transition: 250ms linear;
 
 
 .dot {
-	display: block;
+	display: inline-block;
 	background-color: $link-color;
-	width: 10px;
-	height: 10px;
+	width: 12px;
+	height: 12px;
 	border-radius: 50%;
 	line-height: 1em;
 	transition: $scroll-transition transform;
@@ -62,9 +63,7 @@ $scroll-transition: 250ms linear;
 }
 
 .label {
-	visibility: hidden;
-	opacity: 0;
-	transition: $scroll-transition opacity;
+	display: none;
 
 	color: white;
 	padding-left: .5em;
@@ -72,7 +71,6 @@ $scroll-transition: 250ms linear;
 	font-size: em(16);
 
 	.scroll-nav-item:hover & {
-		visibility: visible;
-		opacity: 1;
+		display: inline-block;
 	}
 }
