@@ -200,7 +200,7 @@
 	<ul>
 	<?php
 		foreach($data as $key=>$i){
-			echo '<li><a href="#'.$key.'" class="scroll-nav-item"><div class="dot"></div><span class="label">'.$i['title'].'</span></a></li>';
+			echo '<li><a href="#'.$key.'" class="scroll-nav-item"><span class="label">'.$i['title'].'</span></a></li>';
 		}
 	?>
 	</ul>

@@ -22,5 +22,5 @@ $body-font: $secondary-font;
 // convert EMs
 
 @function em($size){
-	@return #{$size/16}em;
+	@return #{$size/18}em;
 }

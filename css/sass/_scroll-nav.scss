@@ -29,46 +29,44 @@ $scroll-transition: 250ms linear;
 }
 
 .scroll-nav-item {
-	display: block;
-	padding: .5em;
+	display: inline-block;
 	border-radius: 3px;
 	transition: $scroll-transition background-color;
-	box-sizing: border-box;
 	cursor: pointer;
 
+	&::before {
+		content: '';
+		display: inline-block;
+		background-image: url('../images/white-dot.svg');
+		background-size: 12px 12px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		width: 28px;
+		height: 28px;
+		vertical-align: middle;
+	}
+	
 	&:hover {
+		background-color: $color2;
+	}
+	
+	&.scroll-nav-item-on {
 		background-color: $color2;
 	}
 }
 
 
-.dot {
-	display: inline-block;
-	background-color: $link-color;
-	width: 12px;
-	height: 12px;
-	border-radius: 50%;
-	line-height: 1em;
-	transition: $scroll-transition transform;
-
-	.scroll-nav-item-on & {
-		background-color: white;
-		transform: scale(2);
-	}
-
-	.scroll-nav-item:hover & {
-		transform: scale(1);
-		background-color: white;
-	}
-}
 
 .label {
 	display: none;
 
 	color: white;
-	padding-left: .5em;
-	line-height: 1em;
-	font-size: em(16);
+	padding: 0 0.5em 0 0;
+	height: 18px;
+	font-size: 1em;
+	line-height: normal;
+	vertical-align: middle;
+	font-weight: bold;
 
 	.scroll-nav-item:hover & {
 		display: inline-block;
