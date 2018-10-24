@@ -163,11 +163,15 @@
 
 
 					<div class="frame-desktop">
-						<img src="" data-src="<?php echo $desktop_img; ?>" alt="<?php echo $i['title']; ?> on Desktop" />
+						<div class="image-desktop">
+							<img src="" data-src="<?php echo $desktop_img; ?>" alt="<?php echo $i['title']; ?> on Desktop" />
+						</div>
 					</div>
 
 					<div class="frame-mobile">
+						<div class="image-mobile">
 						<img src="" data-src="<?php echo $mobile_img; ?>" alt="<?php echo $i['title']; ?> on Mobile" />
+						</div>
 					</div>
 					<?php } else if($i['type'] == 'art'){ ?>
 						<div class="frame-art">

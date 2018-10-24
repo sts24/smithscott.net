@@ -8,6 +8,8 @@
 	
 	flex-direction: column;
 
+	&::before { display: none; }
+
 	@media (max-width: 767px){
 		background-image: url('../images/anacapa-small.jpg');
 	}

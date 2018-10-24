@@ -97,9 +97,12 @@ body {
 .showcase-area {
 	text-align: center;
 	margin: 0 1em 2em 1em;
+	width: 100%;
+	padding: 0 2em;
 
 	@media (min-width: 1024px){
 		flex: 0 1 90%;
+		padding: 0;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -107,7 +110,7 @@ body {
 }
 
 .frame-desktop {
-	width: auto;
+	width: 100%;
 	display: inline-block;
 	margin-bottom: 2em;
 	margin-right: 0;
@@ -118,12 +121,6 @@ body {
 	background-size: 30px auto;
 	border-radius: 5px 5px 0 0;
 	padding: 1em 0 0 0;
-
-	>img {
-		width: 100%;
-		height: auto;
-		display: block;
-	}
 
 	@media (min-width: 1024px){
 		flex: 0 1 auto;
@@ -137,37 +134,67 @@ body {
 	}
 }
 
+	.image-desktop {
+		position: relative;
+		
+		>img {
+			width: 100%;
+			height: auto;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+		
+		&::after {
+			content: '';
+			display: block;
+			padding-top: 56.25%;
+		}
+	}
+	
 .frame-mobile {
-	width: auto;
+	width: 100%;
 	display: inline-block;
 	margin: auto;
 	border-radius: 10px;
-	padding: 1.5em .25em;
+	padding: .25em;
 	background-color: $gray;
-	background-position: center bottom .3em;
-	background-image: url('../images/circle.svg');
-	background-size: em(15);
-	background-repeat: no-repeat;
-
-	>img {
-		max-width: 300px;
-		height: auto;
-		display: block;
-		width: 100%;
-	}
-
-
+	max-width: 300px;
 
 	@media (min-width: 1024px){
 		flex: 0 1 auto;
 		width: 100%;
 		max-width: 300px;
 		margin: 0 2em;
-		padding: 3em .5em;
+		padding: .5em;
 		background-size: em(30);
 		background-position: center bottom .6em;
 	}
 }
+
+	.image-mobile {
+		position: relative;
+		
+		>img {
+			height: auto;
+			display: block;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+		
+		&::after {
+			content: '';
+			display: block;
+			padding-top: 177.777%;
+		}
+	}
 
 
 .frame-art {
