@@ -137,9 +137,6 @@
 			$desktop_img = 'images/portfolio-items/desktop/'.$key.'.jpg 1x, images/portfolio-items/desktop/'.$key.'@2x.jpg 2x';
 			$mobile_img = 'images/portfolio-items/mobile/'.$key.'.jpg 1x, images/portfolio-items/mobile/'.$key.'@2x.jpg 2x';
 
-			$preload_desktop = 'images/portfolio-items/preload/'.$key.'-desktop.jpg';
-			$preload_mobile = 'images/portfolio-items/preload/'.$key.'-mobile.jpg';
-
 		}
 
 		if($i['type'] == 'art'){
@@ -166,11 +163,11 @@
 
 
 					<div class="frame-desktop">
-						<img src="<?php preload_img($preload_desktop); ?>" data-src="<?php echo $desktop_img; ?>" alt="<?php echo $i['title']; ?> on Desktop" />
+						<img src="" data-src="<?php echo $desktop_img; ?>" alt="<?php echo $i['title']; ?> on Desktop" />
 					</div>
 
 					<div class="frame-mobile">
-						<img src="<?php preload_img($preload_mobile); ?>" data-src="<?php echo $mobile_img; ?>" alt="<?php echo $i['title']; ?> on Mobile" />
+						<img src="" data-src="<?php echo $mobile_img; ?>" alt="<?php echo $i['title']; ?> on Mobile" />
 					</div>
 					<?php } else if($i['type'] == 'art'){ ?>
 						<div class="frame-art">
