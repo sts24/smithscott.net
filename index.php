@@ -24,9 +24,6 @@
 	<meta property="og:site_name" content="Scott Smith Web Design" />
 
 
-	<link href="https://fonts.googleapis.com/css?family=Crete+Round:400,400i|Josefin+Sans:400,700" rel="stylesheet">
-
-
 	<link rel="stylesheet" type="text/css" href="css/ss_styles.css?v=1" />
 
 	<!-- Matomo -->

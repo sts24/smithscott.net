@@ -1,6 +1,7 @@
 @import 'sass/_prepend';
 @import 'sass/_reset';
 
+@import 'sass/_webfonts';
 
 body {
 	background: $color1;
@@ -14,7 +15,6 @@ body {
 }
 
 @import 'sass/_type';
-
 @import 'sass/_header';
 
 
