@@ -15,6 +15,7 @@ var scroll_nav = {
 var lazyLoadImg = function(imgs){
 	for (i = 0; i < imgs.length; ++i) {
 		imgs[i].srcset = imgs[i].dataset.src;
+		imgs[i].classList.add('img-active');
 	}
 }
 

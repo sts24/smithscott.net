@@ -140,12 +140,14 @@ body {
 		>img {
 			width: 100%;
 			height: auto;
-			display: block;
 			position: absolute;
 			top: 0;
 			left: 0;
 			right: 0;
 			bottom: 0;
+			display: none;
+			
+			&.img-active { display: block; }
 		}
 		
 		&::after {
@@ -180,13 +182,15 @@ body {
 		
 		>img {
 			height: auto;
-			display: block;
 			width: 100%;
 			position: absolute;
 			top: 0;
 			left: 0;
 			right: 0;
 			bottom: 0;
+			display: none;
+			
+			&.img-active { display: block; }
 		}
 		
 		&::after {
