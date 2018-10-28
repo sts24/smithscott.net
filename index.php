@@ -154,29 +154,31 @@
 
 			</div>
 
-				<div class="showcase-area">
+			<div class="showcase-area">
 
-					<?php if($i['type'] == 'web'){ ?>
+				<?php if($i['type'] == 'web'){ ?>
 
-
-					<div class="frame-desktop">
-						<div class="image-desktop">
-							<img src="" data-src="<?php echo $desktop_img; ?>" alt="<?php echo $i['title']; ?> on Desktop" />
-						</div>
+				<div class="frame frame-desktop">
+					<div class="portfolio-image image-desktop">
+						<img src="" data-src="<?php echo $desktop_img; ?>" alt="<?php echo $i['title']; ?> on Desktop" />
 					</div>
-
-					<div class="frame-mobile">
-						<div class="image-mobile">
-						<img src="" data-src="<?php echo $mobile_img; ?>" alt="<?php echo $i['title']; ?> on Mobile" />
-						</div>
-					</div>
-					<?php } else if($i['type'] == 'art'){ ?>
-						<div class="frame-art">
-							<img data-src="<?php echo $img; ?>" alt="<?php echo $i['title']; ?>" />
-						</div>
-					<?php } ?>
-
 				</div>
+
+				<div class="frame frame-mobile">
+					<div class="portfolio-image image-mobile">
+					<img src="" data-src="<?php echo $mobile_img; ?>" alt="<?php echo $i['title']; ?> on Mobile" />
+					</div>
+				</div>
+				
+				<?php } else if($i['type'] == 'art'){ ?>
+				
+					<div class="frame frame-art">
+						<img data-src="<?php echo $img; ?>" alt="<?php echo $i['title']; ?>" />
+					</div>
+					
+				<?php } ?>
+
+			</div>
 
 
 

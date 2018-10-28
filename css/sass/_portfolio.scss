@@ -1,0 +1,122 @@
+.portfolio-item {
+	header {
+		color: white;
+		width: auto;
+		max-width: 80ch;
+		margin: auto;
+	}
+}
+
+
+.showcase-area {
+	text-align: center;
+	margin: 0 1em 2em 1em;
+	width: 100%;
+	padding: 0 2em;
+
+	@media (min-width: 1024px){
+		flex: 0 1 90%;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.frame {
+	width: 100%;
+	display: inline-block;
+	margin: auto;
+	
+	@media (min-width: 768px){
+		flex: 0 1 auto;
+		width: 100%;
+		margin: 0 2em;
+	}
+}
+
+
+.frame-desktop {
+	background-color: $gray;
+	background-image: url('../images/dots.svg');
+	background-position: 6px 6px;
+	background-repeat: no-repeat;
+	background-size: 30px auto;
+	border-radius: 5px 5px 0 0;
+	padding: 1em 0 0 0;
+
+	@media (min-width: 1024px){
+		max-width: 1200px;
+		padding: em(25) 0 0 0;
+		background-size: em(50) auto;
+		background-position: .75em .45em;
+		border-radius: 10px 10px 0 0;
+	}
+}
+
+.frame-mobile {
+	border-radius: 10px;
+	padding: 0.25em;
+	background-color: $gray;
+	max-width: 300px;
+
+	@media (min-width: 1024px){
+		max-width: 300px;
+		padding: 0.5em;
+		background-size: em(30);
+		background-position: center bottom .6em;
+	}
+}
+
+
+
+.portfolio-image  {
+	position: relative;
+	
+	>img {
+		width: 100%;
+		height: auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0;
+		transition: 500ms linear opacity;
+		
+		&.img-active { opacity: 1; }
+	}
+}
+
+	.image-desktop {
+		&::after {
+			content: '';
+			display: block;
+			padding-top: 56.25%;
+		}
+	}
+	
+	.image-mobile {
+		&::after {
+			content: '';
+			display: block;
+			padding-top: 177.777%;
+		}
+	}
+	
+
+
+	
+
+
+.frame-art {
+	>img {
+		width: 100%;
+		height: auto;
+	}
+
+	@media (min-width: 768px){
+		flex: 0 1 40%;
+		display: inline-block;
+	}
+}

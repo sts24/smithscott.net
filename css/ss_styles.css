@@ -303,11 +303,17 @@ p {
       align-items: center;
       justify-content: center; } }
 
-.frame-desktop {
+.frame {
   width: 100%;
   display: inline-block;
-  margin-bottom: 2em;
-  margin-right: 0;
+  margin: auto; }
+  @media (min-width: 768px) {
+    .frame {
+      flex: 0 1 auto;
+      width: 100%;
+      margin: 0 2em; } }
+
+.frame-desktop {
   background-color: #2d2d2d;
   background-image: url("../images/dots.svg");
   background-position: 6px 6px;
@@ -317,68 +323,48 @@ p {
   padding: 1em 0 0 0; }
   @media (min-width: 1024px) {
     .frame-desktop {
-      flex: 0 1 auto;
-      width: 100%;
       max-width: 1200px;
-      margin: 0 2em;
       padding: 1.389em 0 0 0;
       background-size: 2.778em auto;
       background-position: .75em .45em;
       border-radius: 10px 10px 0 0; } }
 
-.image-desktop {
-  position: relative; }
-  .image-desktop > img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: none; }
-    .image-desktop > img.img-active {
-      display: block; }
-  .image-desktop::after {
-    content: '';
-    display: block;
-    padding-top: 56.25%; }
-
 .frame-mobile {
-  width: 100%;
-  display: inline-block;
-  margin: auto;
   border-radius: 10px;
-  padding: .25em;
+  padding: 0.25em;
   background-color: #2d2d2d;
   max-width: 300px; }
   @media (min-width: 1024px) {
     .frame-mobile {
-      flex: 0 1 auto;
-      width: 100%;
       max-width: 300px;
-      margin: 0 2em;
-      padding: .5em;
+      padding: 0.5em;
       background-size: 1.667em;
       background-position: center bottom .6em; } }
 
-.image-mobile {
+.portfolio-image {
   position: relative; }
-  .image-mobile > img {
-    height: auto;
+  .portfolio-image > img {
     width: 100%;
+    height: auto;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    display: none; }
-    .image-mobile > img.img-active {
-      display: block; }
-  .image-mobile::after {
-    content: '';
-    display: block;
-    padding-top: 177.777%; }
+    opacity: 0;
+    transition: 500ms linear opacity; }
+    .portfolio-image > img.img-active {
+      opacity: 1; }
+
+.image-desktop::after {
+  content: '';
+  display: block;
+  padding-top: 56.25%; }
+
+.image-mobile::after {
+  content: '';
+  display: block;
+  padding-top: 177.777%; }
 
 .frame-art > img {
   width: 100%;
